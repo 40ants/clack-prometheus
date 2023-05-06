@@ -102,7 +102,7 @@ process_cpu_seconds_total 421.71
 
 <a id="x-28-23A-28-2816-29-20BASE-CHAR-20-2E-20-22CLACK-PROMETHEUS-22-29-20PACKAGE-29"></a>
 
-#### [package](a38b) `clack-prometheus`
+#### [package](384d) `clack-prometheus`
 
 <a id="x-28CLACK-PROMETHEUS-DOCS-2FINDEX-3A-3A-7C-40CLACK-PROMETHEUS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -110,7 +110,7 @@ process_cpu_seconds_total 421.71
 
 <a id="x-28CLACK-PROMETHEUS-3AWITH-PROMETHEUS-STATS-20FUNCTION-29"></a>
 
-##### [function](3de3) `clack-prometheus:with-prometheus-stats` APP &KEY (PATH (OR (UIOP/OS:GETENV "PROMETHEUS\_URI") "/metrics")) (REGISTRY NIL)
+##### [function](112b) `clack-prometheus:with-prometheus-stats` APP &KEY (PATH (OR (UIOP/OS:GETENV "PROMETHEUS\_URI") "/metrics")) (REGISTRY NIL)
 
 Mounts a Clack sub-application to serve stats in Prometheus format.
 
@@ -129,8 +129,8 @@ the [`with-prometheus-stats`][15f2] function.
 [15f2]: https://40ants.com/clack-prometheus/#x-28CLACK-PROMETHEUS-3AWITH-PROMETHEUS-STATS-20FUNCTION-29
 [1e60]: https://github.com/40ants/clack-prometheus
 [c78f]: https://github.com/40ants/clack-prometheus/actions
-[a38b]: https://github.com/40ants/clack-prometheus/blob/d0bb59ffa56d63230243b643575737f74b733c20/src/core.lisp#L1
-[3de3]: https://github.com/40ants/clack-prometheus/blob/d0bb59ffa56d63230243b643575737f74b733c20/src/core.lisp#L50
+[384d]: https://github.com/40ants/clack-prometheus/blob/2340d030df51c83180802f650441489354797298/src/core.lisp#L1
+[112b]: https://github.com/40ants/clack-prometheus/blob/2340d030df51c83180802f650441489354797298/src/core.lisp#L50
 [22ac]: https://github.com/40ants/clack-prometheus/issues
 [67af]: https://github.com/deadtrickster/prometheus.cl
 [df56]: https://prometheus.io/
