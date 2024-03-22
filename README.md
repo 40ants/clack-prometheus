@@ -6,20 +6,12 @@
 
 ## CLACK-PROMETHEUS ASDF System Details
 
-* Version: 0.1.0
-
 * Description: Clack middleware to serve stats in Prometheus format.
-
 * Licence: Unlicense
-
 * Author: Alexander Artemenko <svetlyak.40wt@gmail.com>
-
 * Homepage: [https://40ants.com/clack-prometheus/][1dee]
-
 * Bug tracker: [https://github.com/40ants/clack-prometheus/issues][22ac]
-
 * Source control: [GIT][1e60]
-
 * Depends on: [lack-middleware-mount][7e24], [prometheus][14fa], [prometheus-gc][8b12], [prometheus.collectors.process][563a], [prometheus.collectors.sbcl][a01b], [prometheus.formats.text][b66b]
 
 [![](https://github-actions.40ants.com/40ants/clack-prometheus/matrix.svg?only=ci.run-tests)][c78f]
@@ -102,7 +94,7 @@ process_cpu_seconds_total 421.71
 
 <a id="x-28-23A-28-2816-29-20BASE-CHAR-20-2E-20-22CLACK-PROMETHEUS-22-29-20PACKAGE-29"></a>
 
-#### [package](f5d6) `clack-prometheus`
+#### [package](360c) `clack-prometheus`
 
 <a id="x-28CLACK-PROMETHEUS-DOCS-2FINDEX-3A-3A-7C-40CLACK-PROMETHEUS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -110,7 +102,7 @@ process_cpu_seconds_total 421.71
 
 <a id="x-28CLACK-PROMETHEUS-3AWITH-PROMETHEUS-STATS-20FUNCTION-29"></a>
 
-##### [function](f4b8) `clack-prometheus:with-prometheus-stats` APP &KEY (PATH (OR (UIOP/OS:GETENV "PROMETHEUS\_URI") "/metrics")) (REGISTRY NIL)
+##### [function](414a) `clack-prometheus:with-prometheus-stats` APP &KEY (PATH (OR (UIOP/OS:GETENV "PROMETHEUS\_URI") "/metrics")) (REGISTRY NIL)
 
 Mounts a Clack sub-application to serve stats in Prometheus format.
 
@@ -129,8 +121,8 @@ the [`with-prometheus-stats`][15f2] function.
 [15f2]: https://40ants.com/clack-prometheus/#x-28CLACK-PROMETHEUS-3AWITH-PROMETHEUS-STATS-20FUNCTION-29
 [1e60]: https://github.com/40ants/clack-prometheus
 [c78f]: https://github.com/40ants/clack-prometheus/actions
-[f5d6]: https://github.com/40ants/clack-prometheus/blob/292646744b0bf3773d62995250838dd32279715a/src/core.lisp#L1
-[f4b8]: https://github.com/40ants/clack-prometheus/blob/292646744b0bf3773d62995250838dd32279715a/src/core.lisp#L50
+[360c]: https://github.com/40ants/clack-prometheus/blob/d3512dcd3c0f19dd483c370c160d4cf60c05a0e5/src/core.lisp#L1
+[414a]: https://github.com/40ants/clack-prometheus/blob/d3512dcd3c0f19dd483c370c160d4cf60c05a0e5/src/core.lisp#L50
 [22ac]: https://github.com/40ants/clack-prometheus/issues
 [67af]: https://github.com/deadtrickster/prometheus.cl
 [df56]: https://prometheus.io/
