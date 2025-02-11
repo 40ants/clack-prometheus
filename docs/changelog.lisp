@@ -9,5 +9,17 @@
                               "ASDF"
                               "REPL"
                               "HTTP"))
+  (0.2.0 2025-02-11
+         "
+Backward incompatible
+=====================
+
+* Memory collector now disabled by default.
+
+Changes
+=======
+
+* You can enable or disable collectors by arguments to CLACK-PROMETHEUS:WITH-PROMETHEUS-STATS macro.
+")
   (0.1.0 2023-05-06
          "* Initial version."))
