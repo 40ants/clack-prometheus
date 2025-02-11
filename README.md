@@ -94,7 +94,7 @@ process_cpu_seconds_total 421.71
 
 <a id="x-28-23A-28-2816-29-20BASE-CHAR-20-2E-20-22CLACK-PROMETHEUS-22-29-20PACKAGE-29"></a>
 
-#### [package](360c) `clack-prometheus`
+#### [package](4981) `clack-prometheus`
 
 <a id="x-28CLACK-PROMETHEUS-DOCS-2FINDEX-3A-3A-7C-40CLACK-PROMETHEUS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -102,7 +102,7 @@ process_cpu_seconds_total 421.71
 
 <a id="x-28CLACK-PROMETHEUS-3AWITH-PROMETHEUS-STATS-20FUNCTION-29"></a>
 
-##### [function](414a) `clack-prometheus:with-prometheus-stats` APP &KEY (PATH (OR (UIOP/OS:GETENV "PROMETHEUS\_URI") "/metrics")) (REGISTRY NIL)
+##### [function](3481) `clack-prometheus:with-prometheus-stats` APP &KEY (PATH (OR (UIOP/OS:GETENV "PROMETHEUS\_URI") "/metrics")) (REGISTRY NIL) (MEMORY-COLLECTOR-P NIL) (THREADS-COLLECTOR-P T) (GC-COLLECTOR-P T) (PROCESS-COLLECTOR-P T)
 
 Mounts a Clack sub-application to serve stats in Prometheus format.
 
@@ -114,6 +114,8 @@ a prometheus registry by calling to `PROMETHEUS:MAKE-REGISTRY`, add necessary
 counters, gauges, etc and then pass this registry as `REGISTRY` argument to
 the [`with-prometheus-stats`][15f2] function.
 
+Note: by default, memory collector is turned off, because it causes `SBCL` hanging.
+
 
 [7e1e]: /home/runner/work/prometheus-gc/prometheus-gc/docs/build/#x-28-23A-28-2813-29-20BASE-CHAR-20-2E-20-22prometheus-gc-22-29-20ASDF-2FSYSTEM-3ASYSTEM-29
 [c095]: https://40ants.com/40ants-openrpc/#x-28-23A-28-2814-29-20BASE-CHAR-20-2E-20-2240ants-openrpc-22-29-20ASDF-2FSYSTEM-3ASYSTEM-29
@@ -121,8 +123,8 @@ the [`with-prometheus-stats`][15f2] function.
 [15f2]: https://40ants.com/clack-prometheus/#x-28CLACK-PROMETHEUS-3AWITH-PROMETHEUS-STATS-20FUNCTION-29
 [1e60]: https://github.com/40ants/clack-prometheus
 [c78f]: https://github.com/40ants/clack-prometheus/actions
-[360c]: https://github.com/40ants/clack-prometheus/blob/d3512dcd3c0f19dd483c370c160d4cf60c05a0e5/src/core.lisp#L1
-[414a]: https://github.com/40ants/clack-prometheus/blob/d3512dcd3c0f19dd483c370c160d4cf60c05a0e5/src/core.lisp#L50
+[4981]: https://github.com/40ants/clack-prometheus/blob/b55031efe11c7d400d05481a1029e0b8d9e428a3/src/core.lisp#L1
+[3481]: https://github.com/40ants/clack-prometheus/blob/b55031efe11c7d400d05481a1029e0b8d9e428a3/src/core.lisp#L63
 [22ac]: https://github.com/40ants/clack-prometheus/issues
 [67af]: https://github.com/deadtrickster/prometheus.cl
 [df56]: https://prometheus.io/
