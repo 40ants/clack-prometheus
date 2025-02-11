@@ -19,7 +19,7 @@ Backward incompatible
 Changes
 =======
 
-* You can enable or disable collectors by arguments to CLACK-PROMETHEUS:WITH-PROMETHEUS-STATS macro.
+* You can enable or disable collectors by arguments to CLACK-PROMETHEUS:WITH-PROMETHEUS-STATS function.
 ")
   (0.1.0 2023-05-06
          "* Initial version."))
